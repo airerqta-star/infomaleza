@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmuebles y Baldíos Limpios - Municipalidad de Reconquista</title>
+    
+    <!-- Metadatos para Redes Sociales (Open Graph y Twitter) -->
+    <meta property="og:title" content="Inmuebles y Baldíos Limpios - Reconquista">
+    <meta property="og:description" content="Mantenga su inmueble en condiciones adecuadas de higiene. Evite Multas. Ordenanza 4909/03 y sus mods. Municipalidad de Reconquista. Sec. de Control Público. AGC.">
+    <!-- Cambia esta URL por la imagen de miniatura que desees -->
+    <meta property="og:image" content="https://github.com/airerqta-star/infomaleza/blob/72e08898cdbe2871958b99e291fb84e8912ddca3/miniaturainfo.jpg?raw=true">
+    <meta property="og:url" content="URL_DE_TU_PAGINA_AQUI">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inmuebles y Baldíos Limpios - Reconquista">
+    <meta name="twitter:description" content="Mantenga su inmueble en condiciones adecuadas de higiene. Evite Multas. Ordenanza 4909/03 y sus mods. Municipalidad de Reconquista. Sec. de Control Público. AGC.">
+    <!-- Cambia esta URL por la imagen de miniatura que desees -->
+    <meta name="twitter:image" content="https://github.com/airerqta-star/infomaleza/blob/72e08898cdbe2871958b99e291fb84e8912ddca3/miniaturainfo.jpg?raw=true">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0FDFA; /* Fondo base turquesa muy claro */
+        }
+
+        /* Estilos para el Encabezado */
+        .header-title {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .section-title {
+            border-bottom: 3px solid #0D9488; /* Turquesa oscuro para la línea */
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+
+        /* Contenedor para el contenido principal sobre la animación */
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Estilos para la Animación de Fondo */
+        #animation-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .floating-word {
+            position: absolute;
+            pointer-events: none;
+            color: #14B8A6; /* Color turquesa para las palabras */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            white-space: nowrap;
+            opacity: 0;
+            animation: floatAndSway linear infinite;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+        }
+
+        @keyframes floatAndSway {
+            0% {
+                transform: translateY(100vh) translateX(0px) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.5;
+            }
+            50% {
+                transform: translateY(20vh) translateX(50px) rotate(10deg);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-20vh) translateX(-50px) rotate(-10deg);
+                opacity: 0;
+            }
+        }
+        
+        @media print {
+            .no-print, header, footer, #animation-container {
+                display: none;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Contenedor para la animación de fondo -->
+    <div id="animation-container"></div>
+
+    <!-- Contenedor para todo el contenido visible -->
+    <div class="content-wrapper">
+
+        <!-- Encabezado Ajustado -->
+        <header class="bg-white text-gray-800 p-4 shadow-lg">
+            <div class="container mx-auto text-center flex flex-col items-center">
+                <h1 class="text-2xl md:text-3xl font-bold header-title">Municipalidad de Reconquista</h1>
+                <img src="https://github.com/airerqta-star/menuprincipal/raw/58d8279b7e335a0eedd92ad47f982611a6a31ab3/Sec-Control-Publico.png" alt="Logo Secretaría de Control Público" class="h-12 w-auto my-2"
+                onerror="this.onerror=null; this.src='https://placehold.co/200x100/FFFFFF/000000?text=Logo+No+Disponible';">
+                <p class="text-sm md:text-base text-gray-600">Agencia Gubernamental de Control</p>
+            </div>
+        </header>
+
+        <!-- Botón de Imprimir -->
+        <div class="container mx-auto text-right p-4 no-print">
+            <button onclick="window.print()" class="bg-gray-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors flex items-center ml-auto shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>
+                Imprimir
+            </button>
+        </div>
+
+        <!-- Contenido Principal -->
+        <main class="container mx-auto p-4 md:p-8">
+            
+            <!-- Título Principal -->
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-5xl font-bold text-teal-800 mb-2">Sabías que un inmueble con falta de higiene...</h2>
+                <p class="text-lg md:text-xl text-gray-600">...impacta directamente en la salud, la seguridad y la convivencia de todos.</p>
+            </div>
+
+            <!-- Introducción -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-12 border-l-4 border-teal-500 text-center">
+                <p class="text-base md:text-lg mb-4">Estimados vecinos de Reconquista, la falta de higiene en propiedades no es solo un problema estético. Tiene un impacto directo en la calidad de vida y la seguridad de nuestra comunidad. A continuación, detallamos los riesgos y las soluciones que podemos implementar juntos.</p>
+                <p class="text-base md:text-lg font-semibold text-teal-800 bg-teal-50 p-4 rounded-md">Si sos propietario de un baldío u ocupante de un inmueble edificado es tú obligación mantenerlo en condiciones adecuadas de higiene.</p>
+            </div>
+
+            <!-- Sección 1: Impacto en la Comunidad -->
+            <section class="mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 section-title">1. Impacto en la Comunidad</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Tarjeta con Imagen: Salud Pública -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://github.com/airerqta-star/infomaleza/blob/1e92ffb17d33724995092630bc6d1b3f4f9e8d1d/malezadengue.gif?raw=true" alt="Imagen representativa de salud pública" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2">Salud Pública</h4>
+                            <p>La acumulación de basura y maleza crea criaderos de mosquitos (dengue), roedores (leptospirosis) y otros insectos peligrosos, poniendo en riesgo la salud de toda la población.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta con Imagen: Seguridad Ciudadana -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://github.com/airerqta-star/infomaleza/blob/1e92ffb17d33724995092630bc6d1b3f4f9e8d1d/inseguridad.gif?raw=true" alt="Imagen representativa de seguridad" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2">Seguridad Ciudadana</h4>
+                            <p>La maleza alta y los residuos pueden servir como escondite para delincuentes, facilitando actos vandálicos y obstaculizando la visibilidad y vigilancia del barrio.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta con Imagen: Riesgo de Incendios -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://github.com/airerqta-star/infomaleza/blob/b1d53f41031346ddfcaf6da64aa84267823f2a40/gifmaleza%20(1).gif?raw=true" alt="Imagen representativa de riesgo de incendios" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2">Riesgo de Incendios</h4>
+                            <p>La maleza seca y los materiales acumulados son altamente combustibles, aumentando el peligro de incendios que pueden propagarse rápidamente a propiedades vecinas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta con Imagen: Convivencia Vecinal -->
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://github.com/airerqta-star/infomaleza/blob/1e92ffb17d33724995092630bc6d1b3f4f9e8d1d/conflicto.gif?raw=true" alt="Imagen representativa de problemas de convivencia" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2">Convivencia Vecinal</h4>
+                            <p>Genera conflictos y malestar entre vecinos, quienes deben convivir con los riesgos y el deterioro causado por la irresponsabilidad de un propietario.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 2: ¿Qué Hacemos? -->
+            <section class="mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 section-title">2. ¿Qué Hacemos Desde el Municipio?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-teal-50 p-6 rounded-lg border-l-4 border-teal-500 shadow">
+                        <h4 class="text-xl font-semibold text-teal-800 mb-2">Inspección y Sanción</h4>
+                        <p>Fortalecemos las inspecciones y aplicamos sanciones a quienes no cumplan. Notificamos, otorgamos un plazo y, de ser necesario, realizamos la limpieza con cargo al propietario.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 shadow">
+                        <h4 class="text-xl font-semibold text-green-800 mb-2">Asistencia y Facilitación</h4>
+                        <p>Creamos programas de apoyo para propietarios vulnerables que no pueden mantener sus inmuebles, ofreciendo soluciones comunitarias.</p>
+                    </div>
+
+                    <div class="bg-sky-50 p-6 rounded-lg border-l-4 border-sky-500 shadow">
+                        <h4 class="text-xl font-semibold text-sky-800 mb-2">Servicios de Recolección</h4>
+                        <p>Optimizamos y difundimos los cronogramas de recolección de residuos voluminosos, cacharros y restos de poda para facilitar la correcta disposición.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 3: Llamada a la acción -->
+            <section class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">¡Sumate a la Solución!</h3>
+                <p class="text-lg bg-gray-100 p-4 rounded-md italic text-gray-700">"¡Tu patio limpio es salud, seguridad y orgullo para Reconquista! Mantené tu frente: juntos hacemos nuestra ciudad más linda y segura."</p>
+                <p class="mt-4 font-semibold text-teal-700 text-xl">#ReconquistaLimpiaYSegura</p>
+                
+                <div class="mt-8 bg-amber-200 border-2 border-amber-400 rounded-lg p-6 max-w-lg mx-auto shadow-inner">
+                     <h4 class="text-xl font-bold text-amber-800 mb-2">¿VISTE UN INMUEBLE EN MAL ESTADO?</h4>
+                     <p class="text-lg text-gray-900">Tu denuncia es fundamental. Comunicate con nosotros:</p>
+                     <a href="tel:3482560840" class="mt-4 inline-block bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-2xl hover:bg-green-700 transition-colors shadow-md">
+                         DENUNCIAS AL CEL: 3482-560840
+                     </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="bg-gray-800 text-white p-4 mt-12">
+            <div class="container mx-auto text-center text-sm">
+                <p>&copy; Municipalidad de Reconquista - Gestión para una ciudad más limpia y segura.</p>
+            </div>
+        </footer>
+
+    </div> <!-- Fin de content-wrapper -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const words = ["limpiá", "tu", "terreno", "obligación", "cuidá", "prevení", "denunciá"];
+            const container = document.getElementById('animation-container');
+            const numElements = 40; // Cantidad reducida para ser más sutil
+
+            for (let i = 0; i < numElements; i++) {
+                const wordElement = document.createElement('span');
+                
+                wordElement.textContent = words[Math.floor(Math.random() * words.length)];
+                wordElement.classList.add('floating-word');
+
+                const startX = Math.random() * 100;
+                const startSize = Math.random() * (40 - 20) + 20;
+                const duration = Math.random() * (25 - 15) + 15;
+                const delay = Math.random() * -duration;
+
+                wordElement.style.left = `${startX}vw`;
+                wordElement.style.fontSize = `${startSize}px`;
+                wordElement.style.animationDuration = `${duration}s`;
+                wordElement.style.animationDelay = `${delay}s`;
+
+                container.appendChild(wordElement);
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
